@@ -1,0 +1,37 @@
+.popmake-title {
+	font-weight: 700 !important;
+}
+
+.popmake {
+	p {
+		margin: 0;
+	}
+}
+
+
+.alert-header {
+	background-color: $alert;
+	color 			: $brown;
+	padding 		: 0.5em;
+
+	/* @media only screen and (min-width: $bp__content-float) {
+		float: right;
+		width: 35%;
+	}
+
+	@media only screen and (min-width: $bp__laptop) {
+		width: 42.5%;
+	}
+
+	@media only screen and (min-width: $bp__max) {
+		width: 45%;
+	}
+ */
+	p {
+		margin: 0;
+	}
+
+	.title-alert {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,119 @@
+/*!
+Theme Name: PDC
+Theme URI: http://underscores.me/
+Author: Chris Wilcoxson & Brian Armstrong
+Author URI: http://dccmarketing.com/
+Description: Custom WordPress theme for PDC by DCC Marketing derived from _s by Automattic
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pdc
+Tags: accessibility-ready, orange, responsive-layout, full-width-template, theme-options, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PDC is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+PDC is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+Normalize
+Typography
+Elements
+Forms
+Navigation
+	Links
+	Menus
+Accessibility
+Alignments
+Clearings
+Widgets
+Content
+	Posts and pages
+	Asides
+	Comments
+	Layouts
+	Page Parts
+Infinite scroll
+Media
+	Captions
+	Galleries
+--------------------------------------------------------------*/
+@import "sass/variables-site/variables-site";
+@import "sass/mixins/mixins-master";
+@import "sass/mixins/mixins-slushman";
+@import "sass/mixins/mixins-theme";
+@import "sass/hover/hover";
+
+/*--------------------------------------------------------------
+## Reset
+--------------------------------------------------------------*/
+@import "sass/normalize";
+
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+@import "sass/typography/typography";
+
+/*--------------------------------------------------------------
+## Elements
+--------------------------------------------------------------*/
+@import "sass/elements/elements";
+
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+@import "sass/forms/forms";
+
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+@import "sass/navigation/navigation";
+
+/*--------------------------------------------------------------
+## Accessibility
+--------------------------------------------------------------*/
+@import "sass/modules/accessibility";
+
+/*--------------------------------------------------------------
+## Alignments
+--------------------------------------------------------------*/
+@import "sass/modules/alignments";
+
+/*--------------------------------------------------------------
+## Clearings
+--------------------------------------------------------------*/
+@import "sass/modules/clearings";
+
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+@import "sass/site/secondary/widgets";
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+@import "sass/site/site";
+
+/*--------------------------------------------------------------
+## Infinite scroll
+--------------------------------------------------------------*/
+@import "sass/modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+## Media
+--------------------------------------------------------------*/
+@import "sass/media/media";
+
+/*--------------------------------------------------------------
+## Plugins
+--------------------------------------------------------------*/
+@import "sass/modules/alerts";
+@import "sass/modules/find-services";
+@import "sass/modules/search-header";

@@ -1,0 +1,5 @@
+@mixin calcwidth( $width ) {
+
+	width: calc( 99% - #{$width} );
+
+}

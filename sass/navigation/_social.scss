@@ -1,0 +1,70 @@
+.nav-social {
+	background-color: $orange;
+	text-align 		: center;
+	padding 		: 0.5em;
+	float 			: left;
+	width 			: 100%;
+	transition 		: $transition__1;
+
+	@media only screen and (min-width: $bp__subheader1) and (max-width: $bp__menu-button) {
+		width 		: 49.5%;
+		margin-top 	: 0.5%;
+	}
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		width: 98.66%;
+	}
+
+	@media only screen and (min-width: $bp__subheader) {
+		box-shadow 	: $shadow__subheader-boxes;
+		max-width 	: 265px;
+
+		.toggled & {
+			max-width 	: 220px;
+			transition 	: $transition__1;
+		}
+	}
+
+	&:after {
+		content 		: "Connect with us";
+		font-weight 	: bold;
+		color 			: $light;
+		text-transform 	: uppercase;
+		transition 		: $transition__1;
+
+		@media only screen and (min-width: $bp__menu-button+1) {
+			font-size 		: $font__size-submenu;
+		}
+	}
+
+	.screen-reader-text,
+	a {
+		@extend %hidetext;
+		color: $light;
+	}
+
+	.menu-items {
+		@extend %listreset;
+	}
+
+	.menu-item {
+		display 	: inline-block;
+		position 	: relative;
+		margin 		: 0 0.5em;
+		line-height : 1.5em;
+
+		svg {
+			width 		: $font__size-social;
+			height 		: $font__size-social - 5px;
+			fill 		: $light;
+			transition 	: $transition__1;
+
+			@media only screen and (min-width: $bp__subheader1) {
+
+				&.email {
+					width: $font__size-social + 25px;
+				}
+			}
+		}
+	}
+}

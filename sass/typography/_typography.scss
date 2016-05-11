@@ -1,0 +1,18 @@
+body,
+button,
+input,
+select,
+textarea {
+	color 			: $color__text-main;
+	font-family 	: $font__main;
+	@include font-size(1);
+	line-height 	: $font__line-height-body;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		color: $darkgray;
+	}
+}
+
+@import "headings";
+
+@import "copy";

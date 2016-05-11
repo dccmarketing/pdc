@@ -1,0 +1,134 @@
+.site-header {
+	// DO NOT ADD PADDING HERE! - it screws up menus
+	overflow 		: auto;
+	margin-bottom	: 0.25em;
+	position 		: relative;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		overflow 		: visible;
+		border-bottom 	: 5px solid $orange;
+		margin-bottom 	: 0;
+	}
+
+	h1 {
+		line-height : 0.7;
+	}
+}
+
+.site-branding {
+	padding		: 1em 0;
+	margin		: 0 auto;
+	text-align 	: center;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		width 	: 40%;
+		float 	: left;
+	}
+
+	@media only screen and (min-width: $bp__laptop) {
+		width 		: 25%;
+		max-width 	: 250px;
+		float 		: left;
+		text-align 	: right;
+		/* position 	: relative;
+		top 		: 50%;
+		transform 	: translateY(-50%); */
+	}
+
+	@media only screen and (min-width: $bp__header) {
+		width 		: 27.5%;
+	}
+}
+
+.site-title {
+	margin: 0;
+
+	a {
+		color 			: $color__text-site-title;
+		text-decoration : none;
+	}
+}
+
+.site-description {
+	text-align: center;
+}
+
+.link-logo-pdc,
+.link-logo-area {
+	display : inline-block;
+	margin 	: 0;
+}
+
+.logo-pdc,
+.logo-area {
+	width 	: $size__logo;
+	height 	: $size__logo;
+
+	//@media only screen and (min-width: $bp__laptop) and (max-width: $bp__header - 1) {
+	@media only screen and (min-width: $bp__laptop) {
+		width 	: $size__small-logo;
+		height 	: $size__small-logo;
+	}
+}
+
+/* .header-right {
+
+	@media only screen and (min-width: $bp__laptop) {
+		float 	: right;
+		width 	: 37.5%;
+	}
+
+	@media only screen and (min-width: $bp__laptop) {
+		width: 42.5%;
+	}
+}
+ */
+.sub-header {
+	transition 		: $transition__1;
+	max-width 		: 650px;
+	overflow 		: auto;
+	background-color: $light;
+	padding-bottom 	: 5px;
+
+	@media only screen and (min-width: $bp__subheader1) {
+		padding-bottom: 1px;
+	}
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		background-color: transparent;
+		padding-bottom 	: 0;
+		float 			: left;
+		@include calcwidth( $size__menu-small-closed );
+
+		&.toggled {
+			@include calcwidth( $size__menu-small-open );
+			transition 	: $transition__1;
+
+			svg {
+				width: $font__size-social-small;
+				height: $font__size-social-small;
+			}
+
+			.nav-social svg {
+				height: $font__size-social-small - 5px;
+
+				&.email {
+					width: $font__size-social-small + 10px;
+				}
+			}
+
+			.menu-label,
+			.nav-social:after {
+				font-size: $font__size-default;
+			}
+		}
+	}
+
+	/* @media only screen and (min-width: $bp__subheader) {
+		@include calcwidth( $size__menu-big-closed );
+
+		&.toggled {
+			@include calcwidth( $size__menu-big-open );
+		}
+	} */
+}

@@ -1,0 +1,38 @@
+$size__site-main		: 100%;
+$size__site-sidebar		: 25%;
+
+$size__default-bot-marg	: 1.5em;
+$size__max-width 		: 700px;
+
+$size__small-logo 		: 100px;
+$size__logo 			: 110px;
+$size__svg_services 	: 70px;
+
+
+$size__menu-button-tall : 106px;
+
+$size__menu-small-closed: 156px;
+$size__menu-small-open 	: 250px;
+
+$size__menu-big-closed 	: 175px;
+$size__menu-big-open 	: 300px;
+
+$size__menu-button-width: 175px;
+$size__menu-width 		: 300px;
+
+$size__menu-small-icons-move: ( $size__menu-small-open / 2 ) - 48px;
+$size__menu-big-icons-move 	: ( $size__menu-big-open / 2 ) - 48px;
+
+$bp__subheader1 		: 550px;
+$bp__menu-button		: 650px;
+$bp__tablet				: 768px;
+$bp__wp-menu 			: 783px;
+$bp__subheader			: 830px;
+$bp__content-float 		: 885px;
+$bp__laptop				: 1024px;
+$bp__header 			: 1160px;
+$bp__max 				: 1200px;
+
+$shadow__subheader-boxes: 3px 3px 1px $transdark2;
+
+$transition__1 			: all 0.4s ease;
